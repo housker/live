@@ -1,6 +1,6 @@
 const MongoClient = require('mongodb').MongoClient;
 const ObjectID = require('mongodb').ObjectID
-require('dotenv').config();
+if(process.env.NODE_ENV === 'dev') require('dotenv').config();
 
 exports.getDefaults = (ts, pts, cb) => {
     findDocuments(ts, pts, (res) => {
