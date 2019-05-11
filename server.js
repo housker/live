@@ -6,7 +6,7 @@ const io = require('socket.io')(http);
 const db = require('./db.js');
 const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config();
-const url = process.env.DB_URL;
+const url = process.env.MONGODB_URI;
 const dbName = process.env.DB_NAME;
 
 const datab = new Promise((resolve, reject) => {
