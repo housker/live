@@ -1,7 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 require('dotenv').config();
-const url = process.env.DB_URL;
+const url = process.env.MONGODB_URI;
 const dbName = process.env.DB_NAME;
 
 MongoClient.connect(url, function(err, client) {
