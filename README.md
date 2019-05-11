@@ -12,6 +12,15 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+Create a .env file with:
+DB_URL=###
+DB_Name=###
+
+```
+npm install
+npm run dev-start
+```
+
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests

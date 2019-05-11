@@ -1,0 +1,32 @@
+*:focus {
+    outline: none;
+  }
+  
+  .wrapper {
+    width: 100vw;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  .content {
+    display: flex;
+  }
+  
+  .container {
+    margin: 5px;
+  }
+  
+  .chart.container {
+    width: 90vw;
+  }
+  
+  .button.container {
+    display: grid;
+  }
+  
+  button {
+    border: 0.5px solid rgb(206, 202, 202);
+    margin: 5px;
+    height: 30px;
+    border-radius: 10px;
+  }
