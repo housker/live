@@ -6,6 +6,7 @@ const io = require('socket.io')(http);
 const db = require('./db.js');
 const MongoClient = require('mongodb').MongoClient;
 if(process.env.NODE_ENV === 'dev') require('dotenv').config();
+const PORT = process.env.PORT;
 const url = process.env.MONGODB_URI;
 const dbName = process.env.DB_NAME;
 
@@ -53,6 +54,6 @@ const job = new CronJob('* * * * * *', function() {
   }
 });
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+http.listen(PORT, function(){
+  console.log(`listening on *:${PORT}`);
 });

@@ -4,9 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "dev-start": "NODE_ENV=dev node emptydb.js & node initdb.js & ng build --watch & nodemon server.js",
+    "dev-start": "node emptydb.js & node initdb.js & ng build --watch & nodemon server.js",
     "ng-start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
