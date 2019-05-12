@@ -1,4 +1,4 @@
-# Zt
+# Live
 
 Live time series data. Deployed to [Heroku](https://zlyt.herokuapp.com/).
 
