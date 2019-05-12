@@ -1,25 +1,26 @@
 # Zt
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
+Live time series data. Deployed to [Heroku](https://zlyt.herokuapp.com/).
+
+## Built With
+
+* [Angular](https://angular.io/) version 7.3.2 - front-end framework
+* [Node.js](https://nodejs.org/en/) version 8.11.2 - Server
+* [Socket.io](https://socket.io/) version 8.11.2 - Bi-directional communication
+* [Cron](https://www.npmjs.com/package/cron) - Scheduling
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Create a .env file and add the following variables:
+```
+PORT=###
+MONGODB_URI=###
+DB_NAME=###
+```
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `npm install` and `NODE_ENV=dev npm run dev-start` for a dev server. Navigate to localhost at port specified in .env. The app will automatically reload if you change any of the source files.
 
 ## Build
-
-Create a .env file with:
-DB_URL=###
-DB_Name=###
-
-```
-npm install
-NODE_ENV=dev npm run dev-start
-```
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
@@ -31,6 +32,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Author
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+**Adelle Housker** - [housker](https://github.com/housker)
